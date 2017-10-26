@@ -29,7 +29,7 @@ RUN \
 # install unifi
  curl -o \
  /tmp/unifi.deb -L \
-	"http://dl.ubnt.com/unifi/${UNIFI_VER}/unifi_sysvinit_all.deb" && \
+	"http://www.ubnt.com/downloads/unifi/debian/pool/ubiquiti/u/unifi/unifi_5.6.19-10171_all.deb" && \
  dpkg -i /tmp/unifi.deb && \
 
 # cleanup
