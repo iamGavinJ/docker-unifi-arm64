@@ -7,7 +7,7 @@ ARG VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 
 # package versions
-ARG UNIFI_VER="5.6.19"
+ARG UNIFI_VER="5.6.20"
 
 # environment settings
 ARG DEBIAN_FRONTEND="noninteractive"
@@ -29,7 +29,7 @@ RUN \
 # install unifi
  curl -o \
  /tmp/unifi.deb -L \
-	"http://www.ubnt.com/downloads/unifi/debian/pool/ubiquiti/u/unifi/unifi_5.6.19-10171_all.deb" && \
+	"https://dl.ubnt.com/unifi/5.6.20/unifi_sysvinit_all.deb" && \
  dpkg -i /tmp/unifi.deb && \
 
 # cleanup
